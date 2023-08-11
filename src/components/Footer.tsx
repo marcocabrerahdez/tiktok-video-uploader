@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <div>
         <p>
           <a href="/terms">Terms of Service</a> |{" "}
-          <a href="/privacy">Privacy Policy</a>
+          <a href="/privacy_policy">Privacy Policy</a>
         </p>
       </div>
     </footer>
