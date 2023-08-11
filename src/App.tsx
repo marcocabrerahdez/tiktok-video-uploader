@@ -30,7 +30,7 @@ function Layout() {
           <Wizard
             name="Guess Wizard"
             img={img}
-            description="Guess Wizard is a game where you guess wizards"
+            description="Guess Wizard what the wizard is showing!"
           />
         </div>
         <div className="right-half">
