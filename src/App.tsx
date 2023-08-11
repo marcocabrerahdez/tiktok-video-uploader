@@ -12,7 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="terms" element={<TermsOfService />} />
-        <Route path="privacy_policy" element={<PrivacyPolicy />} />
+        <Route path="privacy" element={<PrivacyPolicy />} />
       </Routes>
     </div>
   );
