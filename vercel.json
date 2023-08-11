@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    {"source": "/", "destination": "/"},
+    {"source": "/terms", "destination": "/componentes/TermsOfService"},
+    {"source": "/privacy", "destination": "/components/PrivacyPolicy"}
+  ]
+}

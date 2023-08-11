@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
         <p>
           <Link to={"/terms"}>Terms of Service</Link>
           {" | "}
-          <Link to={"privacy"}>Privacy Policy</Link>
+          <Link to={"/privacy"}>Privacy Policy</Link>
         </p>
       </div>
     </footer>

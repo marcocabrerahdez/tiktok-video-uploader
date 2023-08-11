@@ -8,7 +8,7 @@ import "./App.css";
 
 export default function App() {
   return (
-    <div>
+    <div id="root">
       <Routes>
         <Route path="/" element={<Layout />} />
         <Route path="terms" element={<TermsOfService />} />
@@ -23,23 +23,21 @@ function Layout() {
   img.src = "wizard.png";
 
   return (
-    <div id="root">
+    <div>
       <h1>{`Guess Wizardry`}</h1>
       <section className="split-section">
         <div className="left-half">
           <Wizard
             name="Guess Wizard"
             img={img}
-            description="Guess Wizard what the wizard is showing!"
+            description="Guess Wizard is a game where you guess wizards"
           />
         </div>
         <div className="right-half">
           <Video src="flag_video.mp4" />
         </div>
       </section>
-      <section className="footer-section">
-        <Footer />
-      </section>
+      <Footer />
       <Outlet />
     </div>
   );
