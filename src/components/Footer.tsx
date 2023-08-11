@@ -1,6 +1,4 @@
 import React from "react";
-import PrivacyPolicy from "./PrivacyPolicy";
-import TermsOfService from "./TermsOfService";
 
 const Footer: React.FC = () => {
   return (
