@@ -1,44 +1,17 @@
-import { Routes, Route, Outlet } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import TermsOfService from "./components/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy";
-import Footer from "./components/Footer";
-import { Wizard } from "./components/Wizard";
-import { Video } from "./components/Video";
+import Home from "./components/Home";
 import "./App.css";
 
 export default function App() {
   return (
-    <div id="root">
-      <Routes>
-        <Route path="/" element={<Layout />} />
-        <Route path="terms" element={<TermsOfService />} />
-        <Route path="privacy" element={<PrivacyPolicy />} />
-      </Routes>
-    </div>
-  );
-}
-
-function Layout() {
-  const img = new Image();
-  img.src = "wizard.png";
-
-  return (
-    <div>
-      <h1>{`Guess Wizardry`}</h1>
-      <section className="split-section">
-        <div className="left-half">
-          <Wizard
-            name="Guess Wizard"
-            img={img}
-            description="Guess Wizard is a game where you guess wizards"
-          />
-        </div>
-        <div className="right-half">
-          <Video src="flag_video.mp4" />
-        </div>
-      </section>
-      <Footer />
-      <Outlet />
-    </div>
+      <BrowserRouter>
+        <Routes>
+          <Route index path="/" element={<Home />} />
+          <Route path="/terms" element={<TermsOfService />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+        </Routes>
+      </BrowserRouter>
   );
 }
