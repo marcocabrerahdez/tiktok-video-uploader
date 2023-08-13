@@ -66,3 +66,28 @@ footer a {
 footer a:hover {
   color: lightgrey;
 }
+
+/*# Manage mobile styles */
+
+@media (max-width: 600px) {
+  .split-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .split-section > .left-half,
+  .split-section > .right-half {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .split-section > .left-half img,
+  .split-section > .right-half video {
+    max-width: 75%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
